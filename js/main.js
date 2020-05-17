@@ -187,7 +187,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rememberclan/',
-				background: 'url(./img/rc-default/bg.png)'
+				background: 'url(img/rc-default/bg.png)'
 			},
 			'rm.viral': { 
 				name: 'viral',
@@ -196,7 +196,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rm.viral/',
-				background: 'url(./img/rc-default/bg.png)'
+				background: 'url(img/rc-default/bg.png)'
 			},
 			'rm.kad': { 
 				name: 'kad',
@@ -205,7 +205,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rm.kad/',
-				background: 'url(./img/rc-default/bg.png)'
+				background: 'url(img/rc-default/bg.png)'
 			},
 			'rmitsbrandan': { 
 				name: 'STYLEZ ♆',
@@ -214,7 +214,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/serstylez',
 				twitch: 'https://www.twitch.tv/serstylez',
 				instagram: 'https://www.instagram.com/rmitsbrandan/',
-				background: 'url(./img/rc-default/bg.png)'
+				background: 'url(img/rc-default/bg.png)'
 			},
 			'rm.deacon': { 
 				name: 'deacon',
@@ -223,7 +223,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
 				twitch: 'https://www.twitch.tv/0Deacon',
 				instagram: 'https://www.instagram.com/rm.deacon/',
-				background: 'url(./players/rm.deacon/bg.jpg)'
+				background: 'url(../players/rm.deacon/bg.jpg)'
 			}
 		}
 
