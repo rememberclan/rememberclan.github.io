@@ -100,29 +100,15 @@ $(window).on('load', function() {
 	
 	}
 
-	if(window.location.href.indexOf("user.html") > -1) {
-
-		var userName = GetURLParameter('id');
-
-		var ranks = {
-			'rm.deacon': 'staff',
-			'rememberclan': 'brand',
-			'rmitsbrandan':'owner',
-			'rm.viral':'founder',
-			'rm.kad':'owner'
-		}
-
-		if(ranks[userName]) {
-			console.log(true);
-		}
-
+	function populateUser(user) {
+		
 		//Set Items
 		$('title').html(
-			'RM | ' + userName
+			'RM | ' + user.name.toUpperCase()
 		)
 		
 		$.ajax({
-			url: "https://www.instagram.com/" + userName + "/?__a=1",
+			url: user.instagram + "?__a=1",
 			cache: false
 		})
 		.done(function( data ) {
@@ -135,7 +121,69 @@ $(window).on('load', function() {
 	
 		});
 
+	}
 
+	if(window.location.href.indexOf("user.html") > -1) {
+
+		var userName = GetURLParameter('id');
+
+		var ranks = {
+			'rememberclan': { 
+				name: 'rememberclan',
+				rank: 'brand',
+				discord: 'https://discord.gg/BYDmACR',
+				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
+				twitch: 'https://www.twitch.tv/0Deacon',
+				instagram: 'https://www.instagram.com/rm.deacon/',
+				background: ''
+			},
+			'rm.viral': { 
+				name: 'viral',
+				rank: 'founder',
+				discord: 'https://discord.gg/BYDmACR',
+				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
+				twitch: 'https://www.twitch.tv/0Deacon',
+				instagram: 'https://www.instagram.com/rm.deacon/',
+				background: ''
+			},
+			'rm.kad': { 
+				name: 'kad',
+				rank: 'owner',
+				discord: 'https://discord.gg/BYDmACR',
+				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
+				twitch: 'https://www.twitch.tv/0Deacon',
+				instagram: 'https://www.instagram.com/rm.deacon/',
+				background: ''
+			},
+			'rmitsbrandan': { 
+				name: 'brandan',
+				rank: 'owner',
+				discord: 'https://discord.gg/BYDmACR',
+				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
+				twitch: 'https://www.twitch.tv/0Deacon',
+				instagram: 'https://www.instagram.com/rm.deacon/',
+				background: ''
+			},
+			'rm.deacon': { 
+				name: 'deacon',
+				rank: 'staff',
+				discord: 'https://discord.gg/BYDmACR',
+				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
+				twitch: 'https://www.twitch.tv/0Deacon',
+				instagram: 'https://www.instagram.com/rm.deacon/',
+				background: ''
+			}
+		}
+
+		if(ranks[userName]) {
+			window.history.pushState(null, null, "/u/" + userName);
+			populateUser(ranks[userName]);
+		} else {
+			window.history.pushState(null, null, "/u/UNKNOWN");
+			$('title').html(
+				'UNKNOWN'
+			)
+		}
 	}
 
 	
