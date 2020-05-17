@@ -104,6 +104,18 @@ $(window).on('load', function() {
 
 		var userName = GetURLParameter('id');
 
+		var ranks = {
+			'rm.deacon': 'staff',
+			'rememberclan': 'brand',
+			'rmitsbrandan':'owner',
+			'rm.viral':'founder',
+			'rm.kad':'owner'
+		}
+
+		if(ranks[userName]) {
+			console.log(true);
+		}
+
 		//Set Items
 		$('title').html(
 			'RM | ' + userName
