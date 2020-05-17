@@ -1845,8 +1845,7 @@ ol {
 	user-select: none;
 }
 
-#player-tier::before {
-	content: "";
+#rank-circle {
 	display: block;
 	position: absolute;
 	border-radius: 50%;
