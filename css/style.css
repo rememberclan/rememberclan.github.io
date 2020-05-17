@@ -1787,10 +1787,7 @@ ol {
 /* Add */
 .main-nav-outer {
     padding: 0px;
-    border-bottom: 1px solid #dddddd;
-    box-shadow: 0 4px 5px -3px #ececec;
     position: relative;
-    background: #fff;
 }
 
 .main-nav {
@@ -1817,6 +1814,100 @@ ol {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
+
+/* Tier verification */
+
+/* Player Attributes */
+
+#profile-img {
+	border-radius: 50%;
+	width: 5em;
+}
+
+#player-name {
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-size: 1.2em;
+}
+
+#player-tier {
+	display: inline-block;
+	position: relative;
+	color: white;
+	font-size: .75em;
+	font-weight: bold;
+	border-radius: 15px;
+	border: solid 1px #00f8ff;
+	width: 5.5em;
+	padding: .1em 0em .1em .8em;
+	user-select: none;
+}
+
+#player-tier::before {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	width: 1.2em;
+	height: 1.2em;
+	top: .2em;
+	right: 3.9em;
+	background-color: #00f8ff;
+}
+
+/* Customization */ 
+
+.custom-background {
+	background-image: url('../players/rm.deacon/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.social-button {
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	height: 3.4em;
+	color: white;
+	border-radius: 50px;
+	border: solid 2px white;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 3.4em;
+	margin: 10px 0px 10px 0px;
+	transition: all .3s ease-in-out;
+}
+
+.social-button:hover {
+	background-color: white;
+	color: black;
+}
+
+.social-ico {
+	position: absolute;
+	left: .2em;
+	top: .15em;
+	width: 2.8em;
+	border-radius: 50%;
+}
+
+.social-bottom-icons {
+	color: white;
+	font-size: 2.5em;
+	cursor: pointer;
+}
+
+.social-bottom-icons a {
+	color: white;
+}
+
+.social-bottom-icons:hover {
+	font-size: 2.6em;
+}
+
 
 
 

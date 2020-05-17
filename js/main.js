@@ -79,5 +79,53 @@ $(window).on('load', function() {
 	    bottomSpacing: 60
 	});
 
+	/*------------------
+		Users/Tier Validation
+	--------------------*/
+
+	//Grab Params
+	function GetURLParameter(sParam)
+	{
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		
+		for (var i = 0; i < sURLVariables.length; i++)
+		{
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == sParam)
+			{
+				return sParameterName[1];
+			}
+		}
+	
+	}
+
+	if(window.location.href.indexOf("user.html") > -1) {
+
+		var userName = GetURLParameter('id');
+
+		//Set Items
+		$('title').html(
+			'RM | ' + userName
+		)
+		
+		$.ajax({
+			url: "https://www.instagram.com/" + userName + "/?__a=1",
+			cache: false
+		})
+		.done(function( data ) {
+			var userData = data['graphql']['user'];
+			
+			$('#profile-img').attr(
+				'src',
+				userData['profile_pic_url_hd']
+			);
+	
+		});
+
+
+	}
+
+	
 
 })(jQuery);
