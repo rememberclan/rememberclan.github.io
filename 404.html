@@ -1,7 +1,14 @@
 <script>
 
-   /* if(window.location.href.indexOf('rememberclan.com/u/') > -1 ) {
-        window.location.replace('https://rememberclan.com/user.html?id=stylez');
-    }*/
+   var loc = window.location.href;
+
+   if(loc.indexOf('rememberclan.com/u/') > -1 ) {
+
+       var userName = loc.substring(loc.indexOf('rememberclan.com/u/')+19, loc.length);
+
+        window.location.replace(
+            'https://rememberclan.com/user.html?id=' + name
+        );
+    }
 
 </script>
