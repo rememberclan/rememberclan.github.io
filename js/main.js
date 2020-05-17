@@ -228,10 +228,10 @@ $(window).on('load', function() {
 		}
 
 		if(ranks[userName]) {
-			//window.history.pushState(null, null, "/u/" + userName);
+			window.history.pushState(null, null, "/u/" + userName);
 			populateUser(ranks[userName]);
 		} else {
-			//window.history.pushState(null, null, "/u/UNKNOWN");
+			window.history.pushState(null, null, "/u/UNKNOWN");
 			$('title').html(
 				'UNKNOWN'
 			)
