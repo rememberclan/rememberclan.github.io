@@ -158,6 +158,15 @@ $(window).on('load', function() {
 			user.instagram
 		);
 
+		if(user.tiktok != '') {
+			$('#player-tiktok').attr(
+				'href',
+				user.tiktok
+			);			
+		} else {
+			$('#player-tiktok').hide();
+		}
+
 			
 		$.ajax({
 			url: user.instagram + "?__a=1",
@@ -187,6 +196,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rememberclan/',
+				tiktok: 'https://www.tiktok.com/@rememberclan',
 				background: 'url(../img/rc-default/bg.png)'
 			},
 			'rm.viral': { 
@@ -196,6 +206,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rm.viral/',
+				tiktok: 'https://www.tiktok.com/@rememberclan',
 				background: 'url(../img/rc-default/bg.png)'
 			},
 			'rm.kad': { 
@@ -205,6 +216,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
 				twitch: 'https://www.twitch.tv/rememberclan',
 				instagram: 'https://www.instagram.com/rm.kad/',
+				tiktok: 'https://www.tiktok.com/@kadenels',
 				background: 'url(../img/rc-default/bg.png)'
 			},
 			'rmitsbrandan': { 
@@ -214,6 +226,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/serstylez',
 				twitch: 'https://www.twitch.tv/serstylez',
 				instagram: 'https://www.instagram.com/rmitsbrandan/',
+				tiktok: 'https://www.tiktok.com/@growthwithbrandan',
 				background: 'url(../img/rc-default/bg.png)'
 			},
 			'rm.deacon': { 
@@ -223,6 +236,7 @@ $(window).on('load', function() {
 				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
 				twitch: 'https://www.twitch.tv/0Deacon',
 				instagram: 'https://www.instagram.com/rm.deacon/',
+				tiktok: '',
 				background: 'url(../players/rm.deacon/bg.jpg)'
 			}
 		}
