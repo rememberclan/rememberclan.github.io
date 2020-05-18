@@ -1863,6 +1863,7 @@ ol {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
+	padding-bottom: 10em;
 }
 
 .social-button {
