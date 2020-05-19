@@ -45,7 +45,7 @@ var ranks = {
         discord: 'https://discord.gg/BYDmACR',
         youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
         twitch: 'https://www.twitch.tv/0Deacon',
-        instagram: 'https://www.instagram.com/rm.jax/',
+        instagram: 'https://www.instagram.com/rm.deacon/',
         tiktok: '',
         background: 'url(../players/rm.deacon/bg.jpg)'
     },
@@ -55,7 +55,7 @@ var ranks = {
         discord: 'https://discord.gg/BYDmACR',
         youtube: 'https://www.youtube.com/channel/UCWyR32xPznSGwwpuAkRX6gw',
         twitch: 'https://www.twitch.tv/jaxwtff',
-        instagram: 'https://www.instagram.com/rm.deacon/',
+        instagram: 'https://www.instagram.com/rm.jax/',
         tiktok: 'https://vm.tiktok.com/TXeu6L/',
         background: 'url(../img/rc-default/bg.png)'
     }
