@@ -1,5 +1,5 @@
 var ranks = {
-    'rc': { 
+    'remember': { 
         name: 'Team Remember®',
         rank: 'ORG',
         discord: 'https://discord.gg/5Kbj3gZ',
@@ -9,7 +9,7 @@ var ranks = {
         tiktok: 'https://www.tiktok.com/@rememberclan',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'rm.viral': { 
+    'viral': { 
         name: 'viral',
         rank: 'CEO',
         discord: 'https://discord.gg/5Kbj3gZ',
@@ -19,7 +19,7 @@ var ranks = {
         tiktok: 'https://www.tiktok.com/@rememberclan',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'rm.kad': { 
+    'kad': { 
         name: 'kad',
         rank: 'Owner',
         discord: 'https://discord.gg/5Kbj3gZ',
@@ -35,18 +35,28 @@ var ranks = {
         discord: 'https://discord.com/invite/6ekJGJh',
         youtube: 'https://www.youtube.com/serstylez',
         twitch: 'https://www.twitch.tv/serstylez',
-        instagram: 'https://www.instagram.com/rmitsbrandan/',
+        instagram: 'https://www.instagram.com/theitsbrandan/',
         tiktok: 'https://www.tiktok.com/@growthwithbrandan',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'rm.deacon': { 
+    'deacon': { 
         name: 'deacon',
         rank: 'Staff',
         discord: 'https://discord.gg/BYDmACR',
         youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
         twitch: 'https://www.twitch.tv/0Deacon',
-        instagram: 'https://www.instagram.com/rm.deacon/',
+        instagram: 'https://www.instagram.com/rm.jax/',
         tiktok: '',
         background: 'url(../players/rm.deacon/bg.jpg)'
+    },
+    'jax': { 
+        name: 'https://discord.gg/PHHanx',
+        rank: 'Staff',
+        discord: 'https://discord.gg/BYDmACR',
+        youtube: 'https://www.youtube.com/channel/UCWyR32xPznSGwwpuAkRX6gw',
+        twitch: 'https://www.twitch.tv/jaxwtff',
+        instagram: 'https://www.instagram.com/rm.deacon/',
+        tiktok: 'https://vm.tiktok.com/TXeu6L/',
+        background: 'url(../img/rc-default/bg.png)'
     }
 }   
