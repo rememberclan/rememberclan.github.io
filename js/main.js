@@ -111,16 +111,16 @@ $(window).on('load', function() {
 		
 		//Set Items
 		$('title').html(
-			'RM | ' + user.name.toUpperCase()
+			'RM | ' + user['name'].toUpperCase()
 		)
 
 		$('#player-name').html(
-			user.name.toUpperCase()
+			user['name'].toUpperCase()
 		)
 
 		$('#player-tier').html(
 			'<div id="rank-circle"></div>' +
-			user.rank
+			use['rank']
 		)
 
 		$('#player-tier').css(
@@ -135,30 +135,30 @@ $(window).on('load', function() {
 
 		$('.custom-background').css(
 			'background-image',
-			user.background
+			user['background']
 		);
 
 		$('#player-discord').attr(
 			'href',
-			user.discord
+			user['discord']
 		);
 
 		$('#player-youtube').attr(
 			'href',
-			user.youtube
+			user['youtube']
 		);
 
 		$('#player-twitch').attr(
 			'href',
-			user.twitch
+			user['twitch']
 		);
 
 		$('#player-instagram').attr(
 			'href',
-			user.instagram
+			user['instagram']
 		);
 
-		if(user.tiktok != '') {
+		if(user['tiktok'] != '') {
 			$('#player-tiktok').attr(
 				'href',
 				user.tiktok
@@ -169,7 +169,7 @@ $(window).on('load', function() {
 
 			
 		$.ajax({
-			url: user.instagram + "?__a=1",
+			url: user['instagram'] + "?__a=1",
 			cache: false
 		})
 		.done(function( data ) {
@@ -188,58 +188,11 @@ $(window).on('load', function() {
 
 		var userName = GetURLParameter('id');
 
-		var ranks = {
-			'rc': { 
-				name: 'Team Remember®',
-				rank: 'ORG',
-				discord: 'https://discord.gg/5Kbj3gZ',
-				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
-				twitch: 'https://www.twitch.tv/rememberclan',
-				instagram: 'https://www.instagram.com/rememberclan/',
-				tiktok: 'https://www.tiktok.com/@rememberclan',
-				background: 'url(../img/rc-default/bg.png)'
-			},
-			'rm.viral': { 
-				name: 'viral',
-				rank: 'CEO',
-				discord: 'https://discord.gg/5Kbj3gZ',
-				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
-				twitch: 'https://www.twitch.tv/rememberclan',
-				instagram: 'https://www.instagram.com/rm.viral/',
-				tiktok: 'https://www.tiktok.com/@rememberclan',
-				background: 'url(../img/rc-default/bg.png)'
-			},
-			'rm.kad': { 
-				name: 'kad',
-				rank: 'Owner',
-				discord: 'https://discord.gg/5Kbj3gZ',
-				youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
-				twitch: 'https://www.twitch.tv/rememberclan',
-				instagram: 'https://www.instagram.com/rm.kad/',
-				tiktok: 'https://www.tiktok.com/@kadenels',
-				background: 'url(../img/rc-default/bg.png)'
-			},
-			'stylez': { 
-				name: 'STYLEZ ♆',
-				rank: 'Owner',
-				discord: 'https://discord.com/invite/6ekJGJh',
-				youtube: 'https://www.youtube.com/serstylez',
-				twitch: 'https://www.twitch.tv/serstylez',
-				instagram: 'https://www.instagram.com/rmitsbrandan/',
-				tiktok: 'https://www.tiktok.com/@growthwithbrandan',
-				background: 'url(../img/rc-default/bg.png)'
-			},
-			'rm.deacon': { 
-				name: 'deacon',
-				rank: 'Staff',
-				discord: 'https://discord.gg/BYDmACR',
-				youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
-				twitch: 'https://www.twitch.tv/0Deacon',
-				instagram: 'https://www.instagram.com/rm.deacon/',
-				tiktok: '',
-				background: 'url(../players/rm.deacon/bg.jpg)'
-			}
-		}
+		var ranks;
+
+		$.getJSON("ranks.json", function(json) {
+			ranks = json;
+		});
 
 		if(ranks[userName]) {
 			window.history.pushState(null, null, userName);
