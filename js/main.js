@@ -111,16 +111,16 @@ $(window).on('load', function() {
 		
 		//Set Items
 		$('title').html(
-			'RM | ' + user['name'].toUpperCase()
+			'RM | ' + user.name.toUpperCase()
 		)
 
 		$('#player-name').html(
-			user['name'].toUpperCase()
+			user.name.toUpperCase()
 		)
 
 		$('#player-tier').html(
 			'<div id="rank-circle"></div>' +
-			use['rank']
+			user.rank
 		)
 
 		$('#player-tier').css(
@@ -135,30 +135,30 @@ $(window).on('load', function() {
 
 		$('.custom-background').css(
 			'background-image',
-			user['background']
+			user.background
 		);
 
 		$('#player-discord').attr(
 			'href',
-			user['discord']
+			user.discord
 		);
 
 		$('#player-youtube').attr(
 			'href',
-			user['youtube']
+			user.youtube
 		);
 
 		$('#player-twitch').attr(
 			'href',
-			user['twitch']
+			user.twitch
 		);
 
 		$('#player-instagram').attr(
 			'href',
-			user['instagram']
+			user.instagram
 		);
 
-		if(user['tiktok'] != '') {
+		if(user.tiktok != '') {
 			$('#player-tiktok').attr(
 				'href',
 				user.tiktok
@@ -169,7 +169,7 @@ $(window).on('load', function() {
 
 			
 		$.ajax({
-			url: user['instagram'] + "?__a=1",
+			url: user.instagram + "?__a=1",
 			cache: false
 		})
 		.done(function( data ) {
@@ -187,12 +187,6 @@ $(window).on('load', function() {
 	if(window.location.href.indexOf("user.html") > -1) {
 
 		var userName = GetURLParameter('id');
-
-		var ranks;
-
-		$.getJSON("ranks.json", function(json) {
-			ranks = json;
-		});
 
 		if(ranks[userName]) {
 			window.history.pushState(null, null, userName);
