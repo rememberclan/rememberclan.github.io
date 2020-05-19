@@ -50,9 +50,9 @@ var ranks = {
         background: 'url(../players/rm.deacon/bg.jpg)'
     },
     'jax': { 
-        name: 'https://discord.gg/PHHanx',
+        name: 'jax',
         rank: 'Staff',
-        discord: 'https://discord.gg/BYDmACR',
+        discord: 'https://discord.gg/PHHanx',
         youtube: 'https://www.youtube.com/channel/UCWyR32xPznSGwwpuAkRX6gw',
         twitch: 'https://www.twitch.tv/jaxwtff',
         instagram: 'https://www.instagram.com/rm.jax/',
