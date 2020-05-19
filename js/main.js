@@ -219,7 +219,7 @@ $(window).on('load', function() {
 				tiktok: 'https://www.tiktok.com/@kadenels',
 				background: 'url(../img/rc-default/bg.png)'
 			},
-			'rmitsbrandan': { 
+			'stylez': { 
 				name: 'STYLEZ ♆',
 				rank: 'Owner',
 				discord: 'https://discord.com/invite/6ekJGJh',
@@ -242,10 +242,10 @@ $(window).on('load', function() {
 		}
 
 		if(ranks[userName]) {
-			window.history.pushState(null, null, "/u/" + userName);
+			window.history.pushState(null, null, userName);
 			populateUser(ranks[userName]);
 		} else {
-			window.history.pushState(null, null, "/u/UNKNOWN");
+			window.history.pushState(null, null, "UNKNOWN");
 			$('title').html(
 				'UNKNOWN'
 			)
