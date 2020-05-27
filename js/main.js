@@ -106,7 +106,14 @@ $(window).on('load', function() {
 			'ORG': '#0974fe',
 			'CEO': '#FFD700',
 			'Owner': 'white',
-			'Staff': '#00f8ff'
+			'Staff': '#00f8ff',
+			'Tier 7': '#3498db',
+			'Tier 6': '#1abc9c',
+			'Tier 5': '#e91e63',
+			'Tier 4': '#71368a',
+			'Tier 3': '#e67e22',
+			'Tier 2': '#992d22',
+			'Tier 1': '#a29e9e'
 		};
 		
 		//Set Items
@@ -183,6 +190,9 @@ $(window).on('load', function() {
 		});
 
 	}
+
+	//var userName = GetURLParameter('id');
+	//populateUser(ranks[userName]);
 
 	if(window.location.href.indexOf("user.html") > -1) {
 
