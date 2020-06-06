@@ -194,7 +194,7 @@ $(window).on('load', function() {
 	//var userName = GetURLParameter('id');
 	//populateUser(ranks[userName]);
 
-	if(window.location.href.indexOf("user.html") > -1) {
+	/*if(window.location.href.indexOf("user.html") > -1) {
 
 		var userName = GetURLParameter('id');
 
@@ -207,8 +207,9 @@ $(window).on('load', function() {
 				'UNKNOWN'
 			)
 		}
-	}
+	}*/
 
+    populateUser(ranks['remember']);
 	
 
 })(jQuery);
