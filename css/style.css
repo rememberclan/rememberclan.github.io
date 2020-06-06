@@ -1858,6 +1858,14 @@ ol {
 
 /* Customization */ 
 
+.body-bg {
+ 	background-image: url('../img/slider-bg-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+
+}
+
 .custom-background {
 	background-image: url('../players/rm.deacon/bg.jpg');
 	background-size: cover;
@@ -1911,3 +1919,9 @@ ol {
 
 
 
+
+.hero-section .container {
+    padding-top: 17em;
+    padding-bottom: 6em;
+    display: inline-block;
+}
