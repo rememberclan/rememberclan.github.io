@@ -5,7 +5,7 @@
 	
    var userName = loc.substring(loc.indexOf('.com/')+5, loc.length);    
 
-   if(ranks[userName]) {
+   if(ranks[userName.toLowerCase()]) {
 
         window.location.replace(
             'https://rememberclan.com/user.html?id=' + userName
