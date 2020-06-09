@@ -1588,9 +1588,6 @@ ol {
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.header-bar-warp {
-		padding: 39px 15px 0;
-	}
 	.main-menu li a {
 		margin-right: 10px;
 	}
@@ -1653,9 +1650,6 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-	.header-bar-warp {
-		padding: 25px 20px 10px;
-	}
 	.main-menu.primary-menu {
 		display: none;
 	}
@@ -1864,12 +1858,17 @@ ol {
 
 /* Customization */ 
 
+.hero-section {
+	margin: 10em 0em 10em 0em;
+}
+
 .body-bg {
  	background-image: url('../img/slider-bg-1.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
-
+	background-position-y: -5em;
+	background-attachment: fixed;
 }
 
 .custom-background {
@@ -1960,4 +1959,23 @@ ol {
 	font-size: .7em;
 	font-weight: bold;
 	margin: .5em 0em .5em 0em;
+}
+
+@media only screen and (max-width: 890px) {
+
+	.body-bg {
+	   background-size: auto 80%;
+	   background-position-y: 0em;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+
+   .body-bg {
+	   background-size: auto 50%;
+   }
+
+   .hero-section {
+	   margin: 3em 0em 3em 0em;
+   }
 }
