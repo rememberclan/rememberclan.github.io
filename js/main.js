@@ -109,6 +109,7 @@ $(window).on('load', function() {
 			'Staff': '#00f8ff',
 			'Tier 7': '#3498db',
 			'Tier 6': '#1abc9c',
+			'Advisor': '#1abc9c',
 			'Tier 5': '#e91e63',
 			'Tier 4': '#71368a',
 			'Tier 3': '#e67e22',
@@ -191,7 +192,7 @@ $(window).on('load', function() {
 
 	}
 
-	var userName = GetURLParameter('id');
+	/*var userName = GetURLParameter('id');
 
 	if(window.location.href.indexOf("user.html") > -1) {
 
@@ -206,9 +207,9 @@ $(window).on('load', function() {
 				'UNKNOWN'
 			)
 		}
-	}
+	}*/
 
-    //populateUser(ranks['remember']);
+    populateUser(ranks['remember']);
 	
 
 })(jQuery);
