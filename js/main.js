@@ -146,6 +146,26 @@ $(window).on('load', function() {
 			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
 		);
 
+		$('.custom-background').css(
+			'background-image',
+			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
+		);
+
+		$('.custom-background').css(
+			'background-image',
+			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
+		);
+
+		$('.custom-background').css(
+			'background-image',
+			'-moz-linear-gradient( to bottom, transparent, #000000 ), ' + user.background
+		);
+
+		$('.custom-background').css(
+			'background-image',
+			'-webkit-linear-gradient( to bottom, transparent, #000000 ), ' + user.background
+		);
+
 		$('#player-discord').attr(
 			'href',
 			user.discord
