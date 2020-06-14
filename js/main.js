@@ -141,30 +141,12 @@ $(window).on('load', function() {
 			rankColors[user.rank]
 		)
 
-		$('.custom-background').css(
+		/*$('.custom-background').css( //user.background
 			'background-image',
-			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
-		);
-
-		$('.custom-background').css(
-			'background-image',
-			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
-		);
-
-		$('.custom-background').css(
-			'background-image',
-			'linear-gradient( to bottom, transparent, #000000 ), ' + user.background
-		);
-
-		$('.custom-background').css(
-			'background-image',
-			'-moz-linear-gradient( to bottom, transparent, #000000 ), ' + user.background
-		);
-
-		$('.custom-background').css(
-			'background-image',
-			'-webkit-linear-gradient( to bottom, transparent, #000000 ), ' + user.background
-		);
+			'linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")' +
+            '-moz-linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")' +
+            '-webkit-linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")'
+		);*/
 
 		$('#player-discord').attr(
 			'href',
@@ -212,7 +194,7 @@ $(window).on('load', function() {
 
 	}
 
-	var userName = GetURLParameter('id');
+	/*var userName = GetURLParameter('id');
 
 	if(window.location.href.indexOf("user.html") > -1) {
 
@@ -227,9 +209,9 @@ $(window).on('load', function() {
 				'UNKNOWN'
 			)
 		}
-	}
+	}*/
 
-    //populateUser(ranks['remember']);
+    populateUser(ranks['remember']);
 	
 
 })(jQuery);
