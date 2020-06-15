@@ -1938,9 +1938,12 @@ html {
 
 /* Nav Bar */
 .navbar {
+    top: 0 !important;
+    width: 100%;
 	background: black !important;
     -webkit-box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
     box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
+
 }
 
 .navbar-brand {
