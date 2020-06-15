@@ -1941,8 +1941,8 @@ html {
 	background: black !important;
     -webkit-box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
     box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
-    padding-top: 10em;
-    margin-top: -10em;
+    padding-top: 10em !important;
+    margin-top: -10em !important;
 }
 
 .navbar-brand {
