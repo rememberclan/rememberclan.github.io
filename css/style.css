@@ -1971,6 +1971,21 @@ html {
 	margin: .5em 0em .5em 0em;
 }
 
+@media only screen and (min-width: 890px) {
+
+    .navbar {
+       margin-top: -8em !important;
+    }
+
+    .navbar-brand {
+       padding-top: 10em !important;
+    }
+
+    .navbar-toggler {
+       padding-top: 6em !important;
+    }
+}
+
 @media only screen and (max-width: 890px) {
 
 	.body-bg {
