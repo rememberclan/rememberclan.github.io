@@ -1871,11 +1871,17 @@ ol {
 	background-attachment: fixed;
 }
 
-.custom-background {
-   background: linear-gradient( to bottom, rgba(255, 255, 255, 0), #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat;
-   background: -webkit-linear-gradient( top, rgba(255, 255, 255, 0), #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat;
-   background: -moz-linear-gradient( to bottom, rgba(255, 255, 255, 0), #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat;
+html {
+    background: linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat fixed;
+    overflow: hidden;
+}
 
+.custom-background {
+   /*background: linear-gradient( to bottom, rgba(255, 255, 255, 0), #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat;*/
+   /*background: -moz-linear-gradient( to bottom, rgba(255, 255, 255, 0), #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat;*/
+    background-color: transparent;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .social-button {
