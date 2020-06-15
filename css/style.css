@@ -1937,26 +1937,27 @@ html {
 }
 
 /* Nav Bar */
+
+.navbar-expand-lg {
+    padding-top: 10em;
+}
+
 .navbar {
 	background: black !important;
     -webkit-box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
     box-shadow: 0 0 9px 3px rgba(112, 211, 251, 0.24);
-    margin-top: -8em !important;
-
 }
 
 .navbar-brand {
 	font-weight: bold;
 	font-size: small;
 	margin: .5em;
-    padding-top: 10em !important;
 }
 
 .navbar-toggler {
 	border: none;
 	padding: 0em;
 	color: white !important;
-    padding-top: 6em !important;
 }
 
 .navbar-toggler-icon {
@@ -1969,21 +1970,6 @@ html {
 	font-size: .7em;
 	font-weight: bold;
 	margin: .5em 0em .5em 0em;
-}
-
-@media only screen and (min-width: 890px) {
-
-    .navbar {
-       margin-top: -8em !important;
-    }
-
-    .navbar-brand {
-       padding-top: 10em !important;
-    }
-
-    .navbar-toggler {
-       padding-top: 6em !important;
-    }
 }
 
 @media only screen and (max-width: 890px) {
