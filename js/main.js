@@ -89,11 +89,11 @@ $(window).on('load', function() {
 
         if(scrollVal < 0) {
 
-            var offset = scrollVal * -1;
+            var offset = Math.abs(scrollVal);
 
             $('.navbar').css(
                 'padding-top',
-                offset + 'em'
+                offset.toString() + 'em'
             );
         }
     });
