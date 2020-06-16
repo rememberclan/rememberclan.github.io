@@ -1942,7 +1942,7 @@ html {
     display: block;
     position: fixed;
     width: 100%;
-    height: 5em;
+    height: 50px;
     background-color: black;
     z-index: -1;
 }
