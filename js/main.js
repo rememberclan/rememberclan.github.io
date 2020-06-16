@@ -82,7 +82,7 @@ $(window).on('load', function() {
     /*------------------
 		Nav Scroll Fix
 	--------------------*/
-    $(document.body).scroll(function() {
+    /*$(document.body).scroll(function() {
 
         var scrollVal = $(document.body).scrollTop();
         $('.navbar-brand').html(scrollVal);
@@ -96,7 +96,7 @@ $(window).on('load', function() {
                 offset.toString() + 'em'
             );
         }
-    });
+    });*/
 
 	/*------------------
 		Users/Tier Validation
@@ -213,7 +213,7 @@ $(window).on('load', function() {
 
 	}
 
-	/*var userName = GetURLParameter('id');
+	var userName = GetURLParameter('id');
 
 	if(window.location.href.indexOf("user.html") > -1) {
 
@@ -228,9 +228,9 @@ $(window).on('load', function() {
 				'UNKNOWN'
 			)
 		}
-	}*/
+	}
 
-    populateUser(ranks['remember']);
+    //populateUser(ranks['remember']);
 	
 
 })(jQuery);
