@@ -85,14 +85,13 @@ $(window).on('load', function() {
     $(document.body).scroll(function() {
 
         var scrollVal = $(document.body).scrollTop();
-        $('.navbar-brand').html(scrollVal);
 
         if(scrollVal < 0) {
 
-            var offset = Math.abs(scrollVal);
+            var offset = 50 + Math.abs(scrollVal);
 
-            $('.navbar').css(
-                'padding-top',
+            $('.backdrop').css(
+                'height',
                 offset.toString() + 'px'
             );
         }
