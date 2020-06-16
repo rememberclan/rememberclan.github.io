@@ -89,10 +89,10 @@ $(window).on('load', function() {
 
         if(scrollVal < 0) {
 
-            var offset = scrollVal;
+            var offset = Math.abs(scrollVal);
 
             $('.navbar').css(
-                'margin-top',
+                'padding-top',
                 offset.toString() + 'px'
             );
         }
@@ -230,7 +230,7 @@ $(window).on('load', function() {
 		}
 	}*/
 
-    //populateUser(ranks['remember']);
+    populateUser(ranks['remember']);
 	
 
 })(jQuery);
