@@ -93,7 +93,7 @@ $(window).on('load', function() {
 
             $('.navbar').css(
                 'padding-top',
-                offset + 'px'
+                offset + 'em'
             );
         }
     });
