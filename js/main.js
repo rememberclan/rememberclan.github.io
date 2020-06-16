@@ -89,10 +89,10 @@ $(window).on('load', function() {
 
         if(scrollVal < 0) {
 
-            var offset = Math.abs(scrollVal);
+            var offset = scrollVal;
 
             $('.navbar').css(
-                'padding-top',
+                'margin-top',
                 offset.toString() + 'px'
             );
         }
