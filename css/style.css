@@ -600,6 +600,7 @@ ol {
 .intro-section {
 	background: #0c062e;
 	padding: 115px 0;
+    background-color: rgb(18, 18, 18);
 }
 
 .text-box .top-meta {
@@ -1014,7 +1015,7 @@ ol {
 	/* Chrome10-25,Safari5.1-6 */
 	background: -webkit-gradient(linear, left top, right top, from(#330d38), to(#190d36));
 	background: -o-linear-gradient(left, #330d38 0%, #190d36 100%);
-	background: linear-gradient(to right, hsl(0, 0%, 0%) 0%, #0a00ff 100%) !important;
+	background: linear-gradient(to top, hsl(0, 0%, 1%) 0%, rgb(10, 0, 255) 100%) !important;
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#330d38', endColorstr='#190d36', GradientType=1);
 	/* IE6-9 */
@@ -1816,10 +1817,27 @@ ol {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
+.header-link li {
+    list-style: none;
+    margin: .8em 0 0 2em;
+}
+
+.header-link a {
+    color: white;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.header-link a:hover {
+    color: #103bee;
+}
+
 .header-social {
     position: absolute;
     right: 2em;
-    top: 1.5em
+    top: 1.5em;
 }
 
 /* Tier Verification - Player Attributes */
@@ -1871,7 +1889,7 @@ body {
 }
 
 html {
-    /*background: linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat fixed;*/
+    background: linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png") center/cover no-repeat fixed;
     overflow: hidden;
 }
 
