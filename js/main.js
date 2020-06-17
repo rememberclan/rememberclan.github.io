@@ -97,6 +97,22 @@ $(window).on('load', function() {
         }
     });
 
+    /*------------------
+		Roster
+	--------------------*/
+
+    if(window.location.href.indexOf("roster.html") > -1) {
+
+        console.log(Object.keys(ranks))
+
+        // Generate Roster
+        for(var i = 0; i < ranks.length; i++) {
+            console.log('test');
+        }
+
+        //$('.main-section').html(ranks.toString());
+    }
+
 	/*------------------
 		Users/Tier Validation
 	--------------------*/
