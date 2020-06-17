@@ -282,7 +282,6 @@ ol {
 	left: 0;
 	top: 0;
 	z-index: 99;
-	padding: 15px 15px 0;
 }
 
 .header-warp {
@@ -331,6 +330,8 @@ ol {
 
 .header-bar-warp {
 	background: #081624;
+    position: relative;
+    margin: 1em 3em 0 2em;
 	padding: 15px 0px 15px 30px;
 	-webkit-box-shadow: 0 0 9px 3px rgba(7, 147, 241, 0.24);
 	box-shadow: 0 0 9px 3px rgba(7, 147, 241, 0.24);
@@ -1782,7 +1783,8 @@ ol {
 	}
 }
 
-/* Add */
+/* Additions */
+
 .main-nav-outer {
     padding: 0px;
 	position: relative;
@@ -1814,9 +1816,13 @@ ol {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* Tier verification */
+.header-social {
+    position: absolute;
+    right: 2em;
+    top: 1.5em
+}
 
-/* Player Attributes */
+/* Tier Verification - Player Attributes */
 
 #profile-img {
 	border-radius: 50%;
@@ -1858,19 +1864,10 @@ ol {
 
 /* Customization */ 
 
-.hero-section {
-	margin: 10em 0em 10em 0em;
-}
-
-/*.body-bg {
- 	background: url("../img/slider-bg-1.jpg") center/cover no-repeat fixed;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}*/
-
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: black;
 }
 
 html {
@@ -1930,12 +1927,6 @@ html {
 	font-size: 2.6em;
 }
 
-.hero-section .container {
-    padding-top: 17em;
-    padding-bottom: 18em;
-    display: inline-block;
-}
-
 /* Nav Bar */
 
 .backdrop {
@@ -1977,13 +1968,12 @@ html {
 	margin: .5em 0em .5em 0em;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 655px) {
+    .header-section {
+        position: inherit;
+    }
 
-}
-
-@media only screen and (max-width: 700px) {
-
-   .hero-section {
-	   margin: 3em 0em 3em 0em;
-   }
+    .header-bar-warp {
+        margin: 0;
+    }
 }
