@@ -101,16 +101,63 @@ $(window).on('load', function() {
 		Roster
 	--------------------*/
 
-    if(window.location.href.indexOf("roster.html") > -1) {
+    function getPlayerPFP(link) {
+        //console.log(link);
+        /*$.ajax({
+			url: link + "?__a=1",
+			cache: false
+		})
+		.done(function( data ) {
+			console.log(data['graphql']['user']);
+		});*/
+    }
 
-        console.log(Object.keys(ranks))
+    if(window.location.href.indexOf('roster.html') > -1) {
+
+        var tierContainer = $('#tier-players');
+        var unorderedList = document.createElement('ul')
 
         // Generate Roster
-        for(var i = 0; i < ranks.length; i++) {
-            console.log('test');
+        for (var player in ranks) {
+            if (ranks.hasOwnProperty(player)) {
+
+                var playerCard = document.createElement('li');
+                var playerImage = document.createElement('img');
+                var playerName = document.createElement('span');
+                var playerRank = document.createElement('div');
+                var playerPage = document.createElement('a');
+
+                playerCard.classList.add('tier-player');
+
+
+                //getPlayerPFP(ranks[player].instagram);
+                playerImage.src = 'https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s320x320/99425282_300234584324586_4051500533591048192_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=e42WOGjPMD0AX_gRowM&oh=2ed2a0d0bb04d43be892bafa09648d20&oe=5F159B50'; //getPlayerPFP(ranks[player].instagram)
+
+                playerImage.classList.add('profile-ico');
+                playerImage.classList.add('tier-size1');
+
+                playerCard.appendChild(playerImage);
+
+
+
+                unorderedList.appendChild(playerCard);
+
+            }
         }
 
+        tierContainer.append(unorderedList);
+
         //$('.main-section').html(ranks.toString());
+
+                               /*  <li class="tier-player">
+                                    <img class="profile-ico tier-size1" src="https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s320x320/99425282_300234584324586_4051500533591048192_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=e42WOGjPMD0AX_gRowM&oh=2ed2a0d0bb04d43be892bafa09648d20&oe=5F159B50" alt="">
+                                    <span>Viral</span>
+                                    <div class='tier-rank'>
+                                        <div class="tier-rank-circle"></div>
+                                        <span>ORG</span>
+                                    </div>
+                                    <a href=""><i class="fa fa-chevron-right"></i></a>
+                                </li> */
     }
 
 	/*------------------
@@ -212,19 +259,10 @@ $(window).on('load', function() {
 		}
 
 			
-		$.ajax({
-			url: user.instagram + "?__a=1",
-			cache: false
-		})
-		.done(function( data ) {
-			var userData = data['graphql']['user'];
-			
-			$('#profile-img').attr(
-				'src',
-				userData['profile_pic_url_hd']
-			);
-	
-		});
+        $('#profile-img').attr(
+            'src',
+            getPlayerPFP(user.instagram)
+        );
 
 	}
 

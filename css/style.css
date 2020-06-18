@@ -1986,6 +1986,115 @@ html {
 	margin: .5em 0em .5em 0em;
 }
 
+/* Roster */
+
+.tier-roster {
+    margin: 5em 1em 1em 1em;
+}
+
+.tier-roster .col-lg-12 {
+    margin: 1em 0em 1em 0em;
+}
+
+.tier-roster h2 {
+    color: white;
+    margin: 1em 1em 2em 1em;
+}
+
+.tier-classification ul {
+    list-style: none;
+}
+
+.tier-classification li {
+    position: relative;
+    color:white;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.tier-classification a {
+    position: absolute;
+    right: 2em;
+    top: 1.5em;
+    border: 1.5px solid white;
+    padding: .4em .8em .4em .8em;
+    border-radius: 100%;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+}
+
+.tier-classification > ul > li> span {
+    position: absolute;
+    padding-left: .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9em;
+    top: 1.5em;
+    left: 7em;
+}
+
+.profile-ico {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 5em;
+}
+
+.tier-rank {
+    display: block;
+    position: absolute;
+    top: 4.2em;
+    left: 10.5em;
+    color: white;
+    font-size: .65em;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 1px #00f8ff;
+    width: 5em;
+    padding: .1em 0em .1em .8em;
+    user-select: none;
+}
+
+.tier-rank span {
+    padding-left: 1em;
+}
+
+.tier-rank-circle {
+    left: .2em;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	width: 1.2em;
+	height: 1.2em;
+	top: .2em;
+	right: 3.9em;
+	background-color: #00f8ff;
+}
+
+.tier-player {
+    margin: 1em 0 1em 0;
+}
+
+.tier-player img {
+    width: 4em;
+    margin-left: 1em;
+}
+
+.tier-player > span {
+    left: 7.5em !important;
+    top: 1em !important;
+}
+
+.tier-player .tier-rank {
+    left: 11em !important;
+    top: 3.5em !important;
+}
+
+.tier-player a {
+    font-size: .8em;
+    right: 2.8em;
+}
+
 @media only screen and (max-width: 655px) {
     .header-section {
         position: inherit;
