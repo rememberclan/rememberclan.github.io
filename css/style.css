@@ -2050,7 +2050,7 @@ html {
     font-weight: bold;
     border-radius: 15px;
     border: solid 1px #00f8ff;
-    width: 5em;
+    width: 5.9em;
     padding: .1em 0em .1em .8em;
     user-select: none;
 }
@@ -2091,7 +2091,7 @@ html {
 }
 
 .tier-player a {
-    font-size: .8em;
+    font-size: 1em;
     right: 2.8em;
 }
 

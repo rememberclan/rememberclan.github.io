@@ -119,13 +119,16 @@ $(window).on('load', function() {
 
         // Generate Roster
         for (var player in ranks) {
-            if (ranks.hasOwnProperty(player)) {
+            if (ranks.hasOwnProperty(player) && ranks[player].name != 'Team Remember®') {
 
                 var playerCard = document.createElement('li');
                 var playerImage = document.createElement('img');
                 var playerName = document.createElement('span');
                 var playerRank = document.createElement('div');
+                var playerRankCircle = document.createElement('div');
+                var playerRankTitle = document.createElement('span');
                 var playerPage = document.createElement('a');
+                var playerPageChev = document.createElement('i');
 
                 playerCard.classList.add('tier-player');
 
@@ -136,9 +139,24 @@ $(window).on('load', function() {
                 playerImage.classList.add('profile-ico');
                 playerImage.classList.add('tier-size1');
 
+                playerName.innerHTML = ranks[player].name;
+
+                playerRank.classList.add('tier-rank');
+                playerRank.style.borderColor = rankColors[ranks[player].rank]
+                playerRankCircle.classList.add('tier-rank-circle');
+                playerRankCircle.style.backgroundColor = rankColors[ranks[player].rank]
+                playerRankTitle.innerHTML = ranks[player].rank;
+
+                playerPageChev.classList.add('fa');
+                playerPageChev.classList.add('fa-chevron-right');
+
+                playerRank.appendChild(playerRankCircle);
+                playerRank.appendChild(playerRankTitle);
+                playerPage.appendChild(playerPageChev);
                 playerCard.appendChild(playerImage);
-
-
+                playerCard.appendChild(playerName);
+                playerCard.appendChild(playerRank);
+                playerCard.appendChild(playerPage);
 
                 unorderedList.appendChild(playerCard);
 
@@ -147,17 +165,6 @@ $(window).on('load', function() {
 
         tierContainer.append(unorderedList);
 
-        //$('.main-section').html(ranks.toString());
-
-                               /*  <li class="tier-player">
-                                    <img class="profile-ico tier-size1" src="https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s320x320/99425282_300234584324586_4051500533591048192_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=e42WOGjPMD0AX_gRowM&oh=2ed2a0d0bb04d43be892bafa09648d20&oe=5F159B50" alt="">
-                                    <span>Viral</span>
-                                    <div class='tier-rank'>
-                                        <div class="tier-rank-circle"></div>
-                                        <span>ORG</span>
-                                    </div>
-                                    <a href=""><i class="fa fa-chevron-right"></i></a>
-                                </li> */
     }
 
 	/*------------------
@@ -182,21 +189,6 @@ $(window).on('load', function() {
 	}
 
 	function populateUser(user) {
-
-		var rankColors = {
-			'ORG': '#0974fe',
-			'CEO': '#FFD700',
-			'Owner': 'white',
-			'Staff': '#00f8ff',
-			'Tier 7': '#3498db',
-			'Tier 6': '#1abc9c',
-			'Advisor': '#1abc9c',
-			'Tier 5': '#e91e63',
-			'Tier 4': '#71368a',
-			'Tier 3': '#e67e22',
-			'Tier 2': '#992d22',
-			'Tier 1': '#a29e9e'
-		};
 		
 		//Set Items
 		$('title').html(

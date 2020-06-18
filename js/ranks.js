@@ -1,3 +1,14 @@
+var rankColors = {
+    'ORG': '#0974fe',
+    'CEO': '#FFD700',
+    'Owner': 'white',
+    'Staff': '#00f8ff',
+    'Tier 7': '#3498db',
+    'Tier 6': '#1abc9c',
+    'Advisor': '#1abc9c',
+    'Tier 5': '#e91e63',
+};
+
 var ranks = {
     'remember': { 
         name: 'Team Remember®',
@@ -89,17 +100,7 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'label': { 
-        name: 'label',
-        rank: 'Advisor',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.labels/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'sele': { 
+    'sele': {
         name: 'sele',
         rank: 'Tier 6',
         discord: 'https://discord.gg/5Kbj3gZ',
@@ -109,23 +110,33 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'staxii': { 
-        name: 'staxii',
-        rank: 'Tier 4',
+    'blnx': {
+        name: 'blnx',
+        rank: 'Tier 6',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
-        instagram: 'https://www.instagram.com/rm.staxii/',
+        instagram: 'https://www.instagram.com/blnxedits/',
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'rhexzy': { 
-        name: 'rhexzy',
-        rank: 'Tier 4',
+    'mvgtv': {
+        name: 'mvgtv',
+        rank: 'Tier 6',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
-        instagram: 'https://www.instagram.com/rhexzyyy/',
+        instagram: 'https://www.instagram.com/rm.mvgtv/',
+        tiktok: '',
+        background: 'url(../img/rc-default/bg.png)'
+    },
+    'label': {
+        name: 'labels',
+        rank: 'Advisor',
+        discord: 'https://discord.gg/5Kbj3gZ',
+        youtube: '',
+        twitch: '',
+        instagram: 'https://www.instagram.com/rm.labels/',
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
@@ -189,36 +200,6 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'blnx': { 
-        name: 'blnx',
-        rank: 'Tier 6',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/blnxedits/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'flow': { 
-        name: 'flow',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.floww/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'instinqt': { 
-        name: 'instinqt',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.instinqt/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
     'axxuraxy': { 
         name: 'axxuraxy',
         rank: 'Tier 5',
@@ -249,26 +230,6 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'eleven': { 
-        name: 'eleven',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.eleven/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'kag': { 
-        name: 'kag',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.kag/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
     'kjay': { 
         name: 'kjay',
         rank: 'Tier 5',
@@ -296,26 +257,6 @@ var ranks = {
         youtube: '',
         twitch: '',
         instagram: 'https://www.instagram.com/rm.mirko/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'mvgtv': { 
-        name: 'mvgtv',
-        rank: 'Tier 6',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.mvgtv/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'nickk': { 
-        name: 'nickk',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.nickk/',
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
@@ -359,16 +300,6 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'temptt': { 
-        name: 'temptt',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.temptt/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
     'vitalz': { 
         name: 'vitalz',
         rank: 'Tier 5',
@@ -376,16 +307,6 @@ var ranks = {
         youtube: '',
         twitch: '',
         instagram: 'https://www.instagram.com/rm.vitalz/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },
-    'voltic': { 
-        name: 'voltic',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm.voltic/',
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
@@ -409,16 +330,6 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     },
-    'coastrix': { 
-        name: 'coastrix',
-        rank: 'Tier 4',
-        discord: 'https://discord.gg/5Kbj3gZ',
-        youtube: '',
-        twitch: '',
-        instagram: 'https://www.instagram.com/rm_coastrix/',
-        tiktok: '',
-        background: 'url(../img/rc-default/bg.png)'
-    },    
     'siirvic': { 
         name: 'siirvic',
         rank: 'Tier 5',
@@ -429,4 +340,4 @@ var ranks = {
         tiktok: '',
         background: 'url(../img/rc-default/bg.png)'
     }
-}   
+}
