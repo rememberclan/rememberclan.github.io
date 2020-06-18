@@ -2014,7 +2014,7 @@ html {
 
 .tier-classification a {
     position: absolute;
-    right: 1em;
+    right: .15em;
     top: 1em;
     font-size: 1.3em;
     border: 1.5px solid white;
