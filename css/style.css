@@ -2034,6 +2034,17 @@ html {
     left: 7em;
 }
 
+.vertical-seperator {
+    width: 1px;
+    height: 3em;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 1em;
+    border: solid 1px white;
+    border-radius: 20%;
+}
+
 .profile-ico {
     border-radius: 50%;
     border: 2px solid white;
@@ -2091,13 +2102,22 @@ html {
 }
 
 .tier-player a {
-    font-size: 1em;
+    font-size: .8em;
     right: 2.8em;
     top: 1.5em;
 }
 
 #tier-players hr {
     background-color: rgba(255, 255, 255, .7);
+}
+
+.vertical-seperator {
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+#tier-players .vertical-seperator {
+    height: 2em;
+    left: .7em;
 }
 
 @media only screen and (max-width: 655px) {

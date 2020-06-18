@@ -122,6 +122,7 @@ $(window).on('load', function() {
             if (ranks.hasOwnProperty(player) && ranks[player].name != 'Team Remember®') {
 
                 var playerCard = document.createElement('li');
+                var playerDivider = document.createElement('div');
                 var playerImage = document.createElement('img');
                 var playerName = document.createElement('span');
                 var playerRank = document.createElement('div');
@@ -129,10 +130,9 @@ $(window).on('load', function() {
                 var playerRankTitle = document.createElement('span');
                 var playerPage = document.createElement('a');
                 var playerPageChev = document.createElement('i');
-                var seperator = document.createElement('hr');
 
                 playerCard.classList.add('tier-player');
-
+                playerDivider.classList.add('vertical-seperator');
 
                 //getPlayerPFP(ranks[player].instagram);
                 playerImage.src = 'https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-19/s320x320/99425282_300234584324586_4051500533591048192_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_ohc=e42WOGjPMD0AX_gRowM&oh=2ed2a0d0bb04d43be892bafa09648d20&oe=5F159B50'; //getPlayerPFP(ranks[player].instagram)
@@ -153,10 +153,10 @@ $(window).on('load', function() {
                 playerPageChev.classList.add('fa');
                 playerPageChev.classList.add('fa-chevron-right');
 
-                playerCard.appendChild(seperator);
                 playerRank.appendChild(playerRankCircle);
                 playerRank.appendChild(playerRankTitle);
                 playerPage.appendChild(playerPageChev);
+                playerCard.appendChild(playerDivider);
                 playerCard.appendChild(playerImage);
                 playerCard.appendChild(playerName);
                 playerCard.appendChild(playerRank);
