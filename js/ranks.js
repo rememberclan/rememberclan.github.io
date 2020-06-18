@@ -47,7 +47,7 @@ var ranks = {
         youtube: 'https://www.youtube.com/serstylez',
         twitch: 'https://www.twitch.tv/serstylez',
         instagram: 'https://www.instagram.com/thebrandantyler/',
-        tiktok: 'https://www.tiktok.com/@growthwithbrandan',
+        tiktok: 'https://www.tiktok.com/@thebrandantyler',
         background: 'url(../img/rc-default/bg.png)'
     },
     'deacon': { 
