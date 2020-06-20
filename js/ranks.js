@@ -13,6 +13,7 @@ var ranks = {
     'remember': { 
         name: 'Team Remember®',
         rank: 'ORG',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
         twitch: 'https://www.twitch.tv/rememberclan',
@@ -23,7 +24,7 @@ var ranks = {
     'viral': { 
         name: 'viral',
         rank: 'CEO',
-        desc: 'test',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
         twitch: 'https://www.twitch.tv/rememberclan',
@@ -56,6 +57,7 @@ var ranks = {
     'deacon': { 
         name: 'deacon',
         rank: 'Staff',
+        desc: '',
         discord: 'https://discord.gg/BYDmACR',
         youtube: 'https://www.youtube.com/channel/UC45QQL2hM3V5JbbqSib2blw',
         twitch: 'https://www.twitch.tv/0Deacon',
@@ -66,6 +68,7 @@ var ranks = {
     'jax': { 
         name: 'jax',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/PHHanx',
         youtube: 'https://www.youtube.com/channel/UCWyR32xPznSGwwpuAkRX6gw',
         twitch: 'https://www.twitch.tv/jaxwtff',
@@ -76,6 +79,7 @@ var ranks = {
     'kylegorilla': { 
         name: 'kylegorilla',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -86,6 +90,7 @@ var ranks = {
     'spartan': { 
         name: 'spartan',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -96,6 +101,7 @@ var ranks = {
     'amistrix': { 
         name: 'amistrix',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -106,6 +112,7 @@ var ranks = {
     'sele': {
         name: 'sele',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -116,6 +123,7 @@ var ranks = {
     'blnx': {
         name: 'blnx',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -126,6 +134,7 @@ var ranks = {
     'mvgtv': {
         name: 'mvgtv',
         rank: 'Tier 6',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -136,6 +145,7 @@ var ranks = {
     'label': {
         name: 'labels',
         rank: 'Advisor',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -146,6 +156,7 @@ var ranks = {
     'assault': { 
         name: 'assault',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -156,6 +167,7 @@ var ranks = {
     'ben': { 
         name: 'ben',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -166,6 +178,7 @@ var ranks = {
     'snakey': { 
         name: 'snakey',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -176,6 +189,7 @@ var ranks = {
     'stousy': { 
         name: 'stousy',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -186,6 +200,7 @@ var ranks = {
     'darc': { 
         name: 'darc',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -196,6 +211,7 @@ var ranks = {
     'tsiji': { 
         name: 'tsiji',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -206,6 +222,7 @@ var ranks = {
     'axxuraxy': { 
         name: 'axxuraxy',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -216,6 +233,7 @@ var ranks = {
     'blues': { 
         name: 'blues',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -226,6 +244,7 @@ var ranks = {
     'chunky': { 
         name: 'chunky',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -236,6 +255,7 @@ var ranks = {
     'kjay': { 
         name: 'kjay',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -246,6 +266,7 @@ var ranks = {
     'marksman': { 
         name: 'marksman',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -256,6 +277,7 @@ var ranks = {
     'mirko': { 
         name: 'mirko',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -266,6 +288,7 @@ var ranks = {
     'pie': { 
         name: 'pie',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -276,6 +299,7 @@ var ranks = {
     'rollo': { 
         name: 'rollo',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -286,6 +310,7 @@ var ranks = {
     'stamina': { 
         name: 'stamina',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -296,6 +321,7 @@ var ranks = {
     'swain': { 
         name: 'swain',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -306,6 +332,7 @@ var ranks = {
     'vitalz': { 
         name: 'vitalz',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -316,6 +343,7 @@ var ranks = {
     '50k': { 
         name: '50k',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -326,6 +354,7 @@ var ranks = {
     'jom': { 
         name: 'jom',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
@@ -336,6 +365,7 @@ var ranks = {
     'siirvic': { 
         name: 'siirvic',
         rank: 'Tier 5',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
