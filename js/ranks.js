@@ -23,6 +23,7 @@ var ranks = {
     'viral': { 
         name: 'viral',
         rank: 'CEO',
+        desc: 'test',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
         twitch: 'https://www.twitch.tv/rememberclan',
@@ -33,6 +34,7 @@ var ranks = {
     'kad': { 
         name: 'kad',
         rank: 'Owner',
+        desc: '',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: 'https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow',
         twitch: 'https://www.twitch.tv/rememberclan',
@@ -43,6 +45,7 @@ var ranks = {
     'stylez': { 
         name: 'STYLEZ ♆',
         rank: 'Owner',
+        desc: 'NETWORKING / SOFTWARE ENGINEERING / LOGISTICS',
         discord: 'https://discord.com/invite/6ekJGJh',
         youtube: 'https://www.youtube.com/serstylez',
         twitch: 'https://www.twitch.tv/serstylez',

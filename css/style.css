@@ -1856,6 +1856,15 @@ ol {
 	font-size: 1.2em;
 }
 
+#player-description {
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	font-size: .8em;
+    margin-top: 2em;
+}
+
 #player-tier {
 	display: inline-block;
 	position: relative;

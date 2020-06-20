@@ -218,32 +218,61 @@ $(window).on('load', function() {
 			rankColors[user.rank]
 		)
 
-		/*$('.custom-background').css( //user.background
+        if(user.desc != '') {
+			$('#player-description').attr(
+				'href',
+				user.desc
+			);
+		} else {
+			$('#player-description').hide();
+		}
+
+		/*
+
+        Custom Background Code
+
+        $('.custom-background').css( //user.background
 			'background-image',
 			'linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")' +
             '-moz-linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")' +
             '-webkit-linear-gradient( to bottom, transparent, #000000 ), url("../img/rc-default/bg.png")'
 		);*/
 
-		$('#player-discord').attr(
-			'href',
-			user.discord
-		);
+        if(user.discord != '') {
+			$('#player-discord').attr(
+				'href',
+				user.discord
+			);
+		} else {
+			$('#player-discord').hide();
+		}
 
-		$('#player-youtube').attr(
-			'href',
-			user.youtube
-		);
+        if(user.youtube != '') {
+			$('#player-youtube').attr(
+				'href',
+				user.youtube
+			);
+		} else {
+			$('#player-youtube').hide();
+		}
 
-		$('#player-twitch').attr(
-			'href',
-			user.twitch
-		);
+        if(user.twitch != '') {
+			$('#player-twitch').attr(
+				'href',
+				user.twitch
+			);
+		} else {
+			$('#player-twitch').hide();
+		}
 
-		$('#player-instagram').attr(
-			'href',
-			user.instagram
-		);
+        if(user.instagram != '') {
+			$('#player-instagram').attr(
+				'href',
+				user.instagram
+			);
+		} else {
+			$('#player-instagram').hide();
+		}
 
 		if(user.tiktok != '') {
 			$('#player-tiktok').attr(
@@ -253,7 +282,6 @@ $(window).on('load', function() {
 		} else {
 			$('#player-tiktok').hide();
 		}
-
 			
         $('#profile-img').attr(
             'src',
@@ -262,7 +290,7 @@ $(window).on('load', function() {
 
 	}
 
-	var userName = GetURLParameter('id');
+	/*var userName = GetURLParameter('id');
 
 	if(window.location.href.indexOf("user.html") > -1) {
 
@@ -277,9 +305,9 @@ $(window).on('load', function() {
 				'UNKNOWN'
 			)
 		}
-	}
+	}*/
 
-    //populateUser(ranks['remember']);
+    populateUser(ranks['stylez']);
 	
 
 })(jQuery);
