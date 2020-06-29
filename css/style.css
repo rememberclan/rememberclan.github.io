@@ -17,6 +17,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+    background-color: black;
 }
 
 hr {
@@ -1930,10 +1931,10 @@ html {
 
 .social-ico {
 	position: absolute;
-	left: .2em;
-	top: .15em;
-	width: 2.8em;
-	border-radius: 50%;
+	left: .1em;
+	top: -1.1em;
+	width: 3em;
+	clip-path: circle(22px at center);
 }
 
 .social-ico-tok {

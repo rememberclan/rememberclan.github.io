@@ -38,7 +38,6 @@ $(window).on('load', function() {
 	});
 
 
-
 	/*------------------
 		Hero Slider
 	--------------------*/
@@ -64,7 +63,6 @@ $(window).on('load', function() {
 			$(this).html(index + '.');
 		}
 	});
-
 
 
 	/*------------------
@@ -219,9 +217,8 @@ $(window).on('load', function() {
 		)
 
         if(user.desc != '') {
-			$('#player-description').attr(
-				'href',
-				user.desc
+			$('#player-description').html(
+				user.desc.toUpperCase()
 			);
 		} else {
 			$('#player-description').hide();
@@ -265,13 +262,13 @@ $(window).on('load', function() {
 			$('#player-twitch').hide();
 		}
 
-        if(user.instagram != '') {
-			$('#player-instagram').attr(
+        if(user.twitter != '') {
+			$('#player-twitter').attr(
 				'href',
-				user.instagram
+				user.twitter
 			);
 		} else {
-			$('#player-instagram').hide();
+			$('#player-twitter').hide();
 		}
 
 		if(user.tiktok != '') {
@@ -281,6 +278,33 @@ $(window).on('load', function() {
 			);			
 		} else {
 			$('#player-tiktok').hide();
+		}
+
+		if(user.be != '') {
+			$('#player-behance').attr(
+				'href',
+				user.be
+			);
+		} else {
+			$('#player-behance').hide();
+		}
+
+        if(user.custom != '') {
+			$('#player-custom').attr(
+				'href',
+				user.custom
+			);
+		} else {
+			$('#player-custom').hide();
+		}
+
+        if(user.instagram != '') {
+			$('#player-instagram').attr(
+				'href',
+				user.instagram
+			);
+		} else {
+			$('#player-instagram').hide();
 		}
 			
         $('#profile-img').attr(

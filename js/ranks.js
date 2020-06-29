@@ -19,6 +19,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/rememberclan',
         instagram: 'https://www.instagram.com/rememberclan/',
         tiktok: 'https://www.tiktok.com/@rememberclan',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'viral': { 
@@ -30,6 +33,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/rememberclan',
         instagram: 'https://www.instagram.com/rm.viral/',
         tiktok: 'https://www.tiktok.com/@rememberclan',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'kad': { 
@@ -41,6 +47,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/rememberclan',
         instagram: 'https://www.instagram.com/rm.kad/',
         tiktok: 'https://www.tiktok.com/@kadenels',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'stylez': { 
@@ -52,6 +61,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/serstylez',
         instagram: 'https://www.instagram.com/thebrandantyler/',
         tiktok: 'https://www.tiktok.com/@thebrandantyler',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'deacon': { 
@@ -63,6 +75,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/0Deacon',
         instagram: 'https://www.instagram.com/rm.deacon/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../players/rm.deacon/bg.jpg)'
     },
     'jax': { 
@@ -74,6 +89,9 @@ var ranks = {
         twitch: 'https://www.twitch.tv/jaxwtff',
         instagram: 'https://www.instagram.com/rm.jax/',
         tiktok: 'https://vm.tiktok.com/TXeu6L/',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'kylegorilla': { 
@@ -85,6 +103,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/kylegorilla/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'spartan': { 
@@ -96,6 +117,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.spartan/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'amistrix': { 
@@ -107,17 +131,23 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.amistrixs/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'sele': {
         name: 'sele',
         rank: 'Tier 6',
-        desc: '',
+        desc: 'GRAPHICS / MOTION DESIGN / REVAMPS',
         discord: 'https://discord.gg/5Kbj3gZ',
         youtube: '',
         twitch: '',
         instagram: 'https://www.instagram.com/lyriqsele/',
         tiktok: '',
+        twitter: 'https://twitter.com/lyriqsele',
+        be: 'https://www.behance.net/designersele',
+        custom: 'https://designersele.com/',
         background: 'url(../img/rc-default/bg.png)'
     },
     'blnx': {
@@ -129,6 +159,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/blnxedits/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'mvgtv': {
@@ -140,6 +173,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.mvgtv/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'label': {
@@ -151,6 +187,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.labels/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'assault': { 
@@ -162,6 +201,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.assault/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'ben': { 
@@ -173,6 +215,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.benn/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'snakey': { 
@@ -184,6 +229,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.snakey/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'stousy': { 
@@ -195,6 +243,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.stousy/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'darc': { 
@@ -206,6 +257,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.darc/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'tsiji': { 
@@ -217,6 +271,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.tsiji/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'axxuraxy': { 
@@ -228,6 +285,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.axxuraxy/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'blues': { 
@@ -239,6 +299,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.bluez/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'chunky': { 
@@ -250,6 +313,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rmchunky/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'kjay': { 
@@ -261,6 +327,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.kjay/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'marksman': { 
@@ -272,6 +341,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.marksman/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'mirko': { 
@@ -283,6 +355,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.mirko/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'pie': { 
@@ -294,6 +369,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.pie/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'rollo': { 
@@ -305,6 +383,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.rollo/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'stamina': { 
@@ -316,6 +397,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rmstamina/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'swain': { 
@@ -327,6 +411,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.swain/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'vitalz': { 
@@ -338,6 +425,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.vitalz/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     '50k': { 
@@ -349,6 +439,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.50k_/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'jom': { 
@@ -360,6 +453,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/rm.jom/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     },
     'siirvic': { 
@@ -371,6 +467,9 @@ var ranks = {
         twitch: '',
         instagram: 'https://www.instagram.com/siirvic/',
         tiktok: '',
+        twitter: '',
+        be: '',
+        custom: '',
         background: 'url(../img/rc-default/bg.png)'
     }
 }
