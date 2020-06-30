@@ -1931,10 +1931,10 @@ html {
 
 .social-ico {
 	position: absolute;
-	left: .1em;
-	top: -1.1em;
+	left: .05em;
+	top: .15em;
 	width: 3em;
-	clip-path: circle(22px at center);
+    border-radius: 30px;
 }
 
 .social-ico-tok {
