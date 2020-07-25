@@ -32,7 +32,7 @@ function populatePlayerRoster(playerData) {
         playerRankCircle.style.backgroundColor = rankColors[player.RANK]
         playerRankTitle.innerHTML = player.RANK;
 
-        playerPage.href = '/' + player.NAME;
+        playerPage.href = '/' + player.NAME.replace(/[^a-zA-Z]/g, "");
 
         playerPageChev.classList.add('fa');
         playerPageChev.classList.add('fa-chevron-right');
