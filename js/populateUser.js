@@ -159,7 +159,7 @@
 
     var userName = GetURLParameter('id');
 
-    if (userName !== undefined && userName.indexOf('rememberclan') > -1) {
+    if (userName !== undefined && userName.indexOf('remember') > -1) {
 
         var rm = {
             BE: "",
