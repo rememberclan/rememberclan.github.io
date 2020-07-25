@@ -175,6 +175,7 @@
             YOUTUBE: "https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow/" ,
         };
 
+        window.history.pushState(null, null, 'remember');
         populateUser(rm);
 
     } else {
