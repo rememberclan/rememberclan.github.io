@@ -1,20 +1,12 @@
-<script src="js/ranks.js"></script>
 <script>
 
-   var loc = window.location.href;  
-	
-   var userName = loc.substring(loc.indexOf('.com/')+5, loc.length);    
+   var loc = window.location.href;
 
-   if(ranks[userName.toLowerCase()]) {
+   var userName = loc.substring(loc.indexOf('.com/')+5, loc.length);
 
-        window.location.replace(
-            'https://rememberclan.com/user.html?id=' + userName
-        );
-    
-    } else {
-        window.location.replace(
-            'https://rememberclan.com/'
-        );
-    }
+   window.location.replace(
+        'https://rememberclan.com/user.html?id=' + userName
+   );
+
 
 </script>
