@@ -159,42 +159,63 @@
 
     var userName = GetURLParameter('id');
 
-    db.collection('ranks')
-        .get()
-        .then(function (querySnapshot) {
+    if (userName !== undefined && userName.indexOf('rememberclan') > -1) {
 
-            var userFound = false;
+        var rm = {
+            BE: "",
+            CUSTOM: "",
+            DESC: "⚓️ EST. 2012",
+            DISCORD: "https://discord.com/invite/5Kbj3gZ/",
+            INSTAGRAM: "https://www.instagram.com/rememberclan/",
+            NAME: "Team Remember®",
+            RANK: "ORG",
+            TIKTOK: "https://www.tiktok.com/@rememberclan/",
+            TWITCH: "https://www.twitch.tv/rememberclan/",
+            TWITTER: "https://twitter.com/rememberclan/",
+            YOUTUBE: "https://www.youtube.com/channel/UCp1tD7Ee8pT_xL3uI67Qxow/" ,
+        };
 
-            querySnapshot.forEach(function (doc) {
+        populateUser(rm);
 
-                var player = doc.data();
+    } else {
 
-                if (userName !== undefined && player.NAME.toLowerCase().indexOf(userName.toLowerCase()) > -1) {
+        db.collection('ranks')
+            .get()
+            .then(function (querySnapshot) {
 
-                    userFound = true;
-                    populateUser(doc.data());
-                    window.history.pushState(null, null, userName);
+                var userFound = false;
+
+                querySnapshot.forEach(function (doc) {
+
+                    var player = doc.data();
+
+                    if (userName !== undefined && player.NAME.toLowerCase().indexOf(userName.toLowerCase()) > -1) {
+
+                        userFound = true;
+                        populateUser(doc.data());
+                        window.history.pushState(null, null, userName);
+                    }
+
+                });
+
+                if (!userFound) {
+
+                    window.history.pushState(null, null, 'UNKNOWN');
+
+                    $('title').html(
+                        'UNKNOWN'
+                    );
+
+                    $('.main-nav-outer').hide();
+                    $('#service').hide();
+                    $('.player-not-found').show();
                 }
-
-            });
-
-            if (!userFound) {
-
-                window.history.pushState(null, null, 'UNKNOWN');
-
-                $('title').html(
-                    'UNKNOWN'
-                );
-
-                $('.main-nav-outer').hide();
-                $('#service').hide();
-                $('.player-not-found').show();
-            }
 
             })
             .catch(function (error) {
                 console.log('Error getting documents: ', error);
             });
+    }
 
 
 })(jQuery);

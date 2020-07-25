@@ -1958,7 +1958,7 @@ html {
 .player-not-found {
     display: none;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20em;
 }
 
 .player-not-found h2 {
